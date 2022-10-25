@@ -107,7 +107,9 @@ const deleteItem = (a) => {
           <div class="todo-content">
             <input type="text" v-model="todo.content" />
           </div>
-          <button class="delete" @click="deleteItem(todo)">Delete</button>
+          <div class="actions">
+            <button class="delete" @click="deleteItem(todo)">Delete</button>
+          </div>
         </div>
       </div>
     </section>
